@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "clarity-test": {
@@ -49,9 +49,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@clr/icons/clr-icons.min.css",
+              "node_modules/@clr/ui/clr-ui.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "node_modules/@clr/icons/clr-icons.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -144,6 +149,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "clarity-test"
+    }
+  },
+  "defaultProject": "clarity-test",
+  "cli": {
+    "analytics": "cb064eac-f4b3-410b-88b4-524182e6daee"
+  }
 }
